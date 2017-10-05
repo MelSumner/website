@@ -1,12 +1,15 @@
-@import 'compass/reset';
-@import 'compass/typography/text/ellipsis';
-@import 'bourbon';
-@import 'variables';
-@import 'base/base'; // bitters replacement for our homegrown setup
+@import 'global/variables';
+@import 'global/grid-settings';
+@import 'global/typography';
+@import 'wip';
+
+
+//stuff - what is it good for?
 @import 'vendor/docsearch';
 @import 'mixins/hidpi';
-@import 'mixins/width-for-columns';
 @import 'fonts';
+
+
 @import 'examples';
 @import 'about';
 @import 'guides';
@@ -23,23 +26,30 @@
 @import 'components/logos';
 @import 'components/meetups';
 @import 'components/ember-button';
+@import 'pages/teams';
+@import 'pages/meetup-assets';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'pages/404';
+@import 'pages/brand';
+@import 'highlight';
+@import 'pages/about';
+@import 'pages/guides';
+@import 'pages/blog';
+@import 'pages/community';
+@import 'pages/meetups';
+@import 'pages/resources';
+@import 'pages/security';
 
-$small-max-width: 767px;
-
-*, *:before, *:after {
+*, *:before, *:after { //this should be in normalizer.css. do we have that somewhere?
   box-sizing: border-box;
 }
 
 body {
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
-  color: #444444;
-  -webkit-font-smoothing: antialiased;
+  color: #222;
+  -webkit-font-smoothing: antialiased;  //I'm pretty sure you don't have to use that anymore.
 }
-
-@import 'base/typography';
-@import 'base/structure';
 
 /**
   Sidebar
@@ -58,7 +68,7 @@ body {
   border-right: 1px solid #d4ccc8;
   position: relative;
 
-  #back-to-top {
+  .back-to-top {
     padding-left: 13px;
     text-align: center;
     display: none;
@@ -448,13 +458,7 @@ body {
   }
 }
 
-@import 'pages/about';
-@import 'pages/guides';
-@import 'pages/blog';
-@import 'pages/community';
-@import 'pages/meetups';
-@import 'pages/resources';
-@import 'pages/security';
+
 
 /**
   Ember Users Page
@@ -681,10 +685,4 @@ body.tomster_faq #content {
   margin-left: -60px;
 }
 
-@import 'pages/teams';
-@import 'pages/meetup-assets';
-@import 'components/footer';
-@import 'components/buttons';
-@import 'pages/404';
-@import 'pages/brand';
-@import 'highlight';
+

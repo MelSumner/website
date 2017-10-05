@@ -1,0 +1,60 @@
+body {
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 1.2;
+}
+a {
+  color: #DC2C0D;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &.disabled {
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+// How to do vertical height: 
+// to calculate vertical height properly, the margin-top and margin-bottom should each be equal to the line-height.
+// for example, if the line-height is 1.2, then the margin-top and margin-bottom should be each set to 1.2. 
+// however, if you want more space above the heading than below it, then the margin-top should get 1.8em and margin-bottom should be 0.6em. 
+// since this extra vertical margin is typically desired for h1 & h2, we will use those here by default. 
+
+// to calculate font sizes, we will use Perfect Fourth. 
+// Note: If you later decide to use a bigger body(base) font size, these will still scale perfectly. 
+// All you have to do is change the body(base) font size (and keep it in px, please). 
+h1, h2, h3, h4 {
+  line-height: 1;
+  margin: 1.5em 0 1em 0;
+}
+h1 {
+  font-size: 3.157em;
+}
+h2 {
+  font-size: 2.369em;
+}
+h3 {
+  font-size: 1.777em;
+}
+h4 {
+  font-size: 1.333em;
+}
+
+ul {
+  list-style: none;
+}
+ol {
+  list-style-type: decimal;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 1.2 0;
+  &.intro {
+    font-size: 1.333em;
+    line-height: 1;
+    margin: 1.5 0 1em 0;
+  }
+}

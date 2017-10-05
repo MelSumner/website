@@ -4,21 +4,6 @@
   background-color: white;
   margin: 3em auto;
   text-align: center;
-
-  a {
-    color: #D0351A;
-    border: 1px #DDD solid;
-    font-size: 0.7rem;
-    border-radius: 7px;
-    background-color: white;
-    text-transform: uppercase;
-    padding: 0.5rem;
-
-    &:hover {
-      color: white;
-      background-color: #D0351A;
-    }
-  }
 }
 
 .call-to-action__box {
@@ -28,12 +13,6 @@
 .call-to-action__top {
   padding: 1em;
   padding-bottom: 2em;
-
-  h1 {
-    padding-bottom: 0;
-    color: #666;
-    text-transform: capitalize;
-  }
 
   .cta-copy {
     width: 80%;
@@ -68,11 +47,6 @@
   .call-to-action__top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-    h1 {
-      margin-top: 1rem;
-      padding-bottom: 0.5rem;
-    }
   }
 
   .call-to-action__bottom {
